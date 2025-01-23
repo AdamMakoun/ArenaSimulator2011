@@ -72,6 +72,11 @@ public class PlayerStats : MonoBehaviour
             {
                 Debug.Log("Parry successful");
                 //todo add parry animation
+                currentRage += 30;
+                if (currentRage >= rageBar)
+                {
+                    currentRage = rageBar;
+                }
 
                 // Omráèit útoèícího nepøítele
                 if (attackingEnemy != null)
